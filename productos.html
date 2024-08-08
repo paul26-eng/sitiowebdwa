@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>SHOTSPORT</title>
+        <link rel="stylesheet" href="styles_productos.css">
+    </head>
+    <body>
+        <header>
+            <h1>Tienda Online GYM</h1>
+        </header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="acerca_de_nosotros.html">Sobre Nosotros</a>
+            
+        </nav>
+        <div class="main">
+            <h2>Nuestros Productos</h2>
+            <div class="product">
+                <img src="producto1.jpg" alt="Pastel 1">
+                <h3>Mancuernas</h3>
+                <p>Las Mancuernas  son perfectas para 
+                    cualquier rutina de ejercicios. estas mancuernas ofrecen un ajuste rápido
+                    del peso para adaptarse a diferentes entrenamientos. </p>
+            </div>
+            <div class="product">
+                <img src="producto2.jpg" alt="Pastel 2">
+                <h3>Discos</h3>
+                <p>Nuestros Discos de Pesas de Alta Calidad son la elección perfecta para tus entrenamiens, ideales para potenciar tus sesiones de entrenamiento en casa o en el gimnasio.</p>
+            </div>
+            <div class="product">
+                <img src="producto3.jpg" alt="Pastel 3">
+                <h3>Barra en forma de z</h3>
+                <p>La Barra en Forma de Z es ideal para ejercicios de aislamiento y desarrollo muscular. Su diseño ergonómico reduce la tensión en las muñecas, permitiendo entrenamientos más cómodos y efectivos. Perfecta para añadir variedad a tu rutina de fuerza y maximizar resultados.</p>
+            </div>
+            <div class="product">
+                <img src="producto4.jpg" alt="Pastel 3">
+                <h3>Cuerda de Azote</h3>
+                <p>La Cuerda de Azote es perfecta para entrenamientos intensos y dinámicos. Su diseño robusto y duradero ofrece un excelente agarre y resistencia, ideal para ejercicios de fuerza y acondicionamiento. Mejora tu resistencia, potencia y coordinación con esta herramienta versátil y efectiva.</p>
+            </div>
+            <div class="product">
+                <img src="producto5.jpg" alt="Pastel 3">
+                <h3>Banco Multifuncional</h3>
+                <p>El Banco Multifuncional es esencial para un entrenamiento completo en casa. Su diseño versátil permite ajustar la inclinación para realizar una variedad de ejercicios, desde press de banca hasta abdominales. Con una estructura robusta y cómoda, es ideal para fortalecer todo tu cuerpo con eficacia y confort.</p>
+            </div>
+            <div class="product">
+                <img src="producto6.jpg" alt="Pastel 3">
+                <h3>Set de mancuernas ajustables</h3>
+                <p>El Set de Mancuernas Ajustables ofrece flexibilidad y conveniencia en tu rutina de ejercicios. Incluye múltiples pesas que se ajustan fácilmente para adaptar el peso a tus necesidades, permitiendo una amplia gama de ejercicios. Con un diseño compacto y ergonómico, es ideal para entrenar en casa con comodidad y eficiencia.</p>
+            </div>
+            </div>
+            <section class="about">
+                <h2>Tienda Fisica</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <iframe
+            src="mapa1.PNG"
+            width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+            </section>
+   
+                <section class="contact">
+                    <h2>Contactanos</h2>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" placeholder="Edgar Gonzales">
+                            <input type="email" placeholder="pasteleria@gmail.com">
+                            <textarea placeholder="Mensaje" rows="5" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                 </div>
+                </section>
+             <footer>
+              <p>&copy; 2024 SHOPSPORT. Todos los derechos reservados.</p>
+              </footer>  
+              <!-- Asegúrate de incluir esto al final del archivo productos.html antes de </body> -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const aboutSection = document.querySelector('.about');
+    
+        function checkVisibility() {
+            const rect = aboutSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                aboutSection.classList.add('animate');
+            }
+        }
+    
+        window.addEventListener('scroll', checkVisibility);
+        checkVisibility(); // Verifica al cargar la página
+    });
+    </script>
+    
+    </body>
+</html>
